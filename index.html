@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Information System</title>
+    <link rel="icon" href="C:\Users\Owner\Documents\Group 2\assets\Logo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!!!!</h1>
+    <div class="container">
+        <div class="header">
+            <img src="C:\Users\Owner\Documents\Group 2\assets\Logo.png" alt="Logo" class="logo">
+            <h1>Student Information System</h1>
+        </div>
+        <div class="form-container">
+            <div class="form-box">
+                <h2>Login Form</h2>
+                <input type="email" placeholder="Email Address">
+                <input type="password" placeholder="Password">
+                <a href="#" id="forgot-password">Forgot password?</a>
+                <button class="submit">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal -->
+    <div id="custom-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Important</h2>
+            <p>Please go to the IT support office on the 3rd floor of the Asian College premises.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
