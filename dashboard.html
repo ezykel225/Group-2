@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Campus Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard-page">
+    <header class="dashboard-header">
+        <div class="header-left">
+            <button id="sidebar-toggle" class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x50?text=Campus+Connect" alt="Campus Connect Logo">
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="notifications">
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <div class="notification-dropdown">
+                    <div class="notification-header">
+                        <h3>Notifications</h3>
+                        <a href="#">Mark all as read</a>
+                    </div>
+                    <div class="notification-list">
+                        <div class="notification-item unread">
+                            <div class="notification-icon grade">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="notification-content">
+                                <p>New grade posted for <strong>CS101: Introduction to Programming</strong></p>
+                                <span class="notification-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item unread">
+                            <div class="notification-icon message">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="notification-content">
+                                <p>New message from <strong>Prof. Johnson</strong></p>
+                                <span class="notification-time">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="notification-item unread">
+                            <div class="notification-icon event">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="notification-content">
+                                <p>Reminder: <strong>Midterm Exam</strong> tomorrow at 10:00 AM</p>
+                                <span class="notification-time">Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-footer">
+                        <a href="#">View all notifications</a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-menu">
+                <button class="user-menu-btn">
+                    <img src="https://via.placeholder.com/40x40" alt="User" class="user-avatar">
+                    <span class="user-name">John Doe</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="user-dropdown">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+                        <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/80x80" alt="User" class="sidebar-avatar">
+                    <div>
+                        <h3>John Doe</h3>
+                        <p>Student ID: STU001</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#" id="dashboard-link">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="profile-link">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="courses-link">
+                            <i class="fas fa-book"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="grades-link">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Grades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="schedule-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Schedule</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="assignments-link">
+                            <i class="fas fa-tasks"></i>
+                            <span>Assignments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="attendance-link">
+                            <i class="fas fa-clipboard-check"></i>
+                            <span>Attendance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="documents-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="messages-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Messages</span>
+                            <span class="badge">5</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="dashboard-section" class="active-section">
+                <div class="page-header">
+                    <h1>Student Dashboard</h1>
+                    <p>Welcome back, John! Here's an overview of your academic progress.</p>
+                </div>
+
+                <div class="

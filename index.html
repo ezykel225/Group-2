@@ -4,35 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Information System</title>
-    <link rel="icon" href="C:\Users\Owner\Documents\Group 2\assets\Logo.png">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <img src="C:\Users\Owner\Documents\Group 2\assets\Logo.png" alt="Logo" class="logo">
-            <h1>Student Information System</h1>
-        </div>
-        <div class="form-container">
-            <div class="form-box">
-                <h2>Login Form</h2>
-                <input type="email" placeholder="Email Address">
-                <input type="password" placeholder="Password">
-                <a href="#" id="forgot-password">Forgot password?</a>
-                <button class="submit">Login</button>
+<body class="homepage">
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets\Logo.png" alt="Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-login">Login</a>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Custom Modal -->
-    <div id="custom-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2>Important</h2>
-            <p>Please go to the IT support office on the 3rd floor of the Asian College premises.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Asian College Information System</h1>
+            <h2>Developing Leaders in IT and Management</h2>
+            <p>Streamline your academic journey with our comprehensive student information system. Access grades, schedules, and more in one place.</p>
+            <div class="hero-buttons">
+                <a href="login.html" class="btn btn-primary">Get Started</a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
         </div>
-    </div>
+        <div class="hero-image">
+            <img src="assets\Logo.png" alt="">
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Asian College Information System</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Asian College Student Information System is designed to bridge the gap between students, faculty, and administration. Our platform provides a centralized hub for all academic information, making it easier for students to stay on top of their educational journey.</p>
+                    <p>Developed with the modern educational environment in mind, Asian College Student Information offers intuitive interfaces, real-time updates, and secure access to sensitive information.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Institutions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Student Profiles</h3>
+                    <p>Comprehensive student profiles with academic history, personal information, and achievements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Grade Tracking</h3>
+                    <p>Real-time grade updates and GPA calculations to monitor academic progress.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Course Scheduling</h3>
+                    <p>Easy course registration and schedule management with conflict detection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Notifications</h3>
+                    <p>Instant alerts for important deadlines, grade postings, and campus announcements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Document Management</h3>
+                    <p>Secure storage and easy access to transcripts, certificates, and other important documents.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Communication Tools</h3>
+                    <p>Integrated messaging system for student-faculty communication and announcements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets\Logo.png" alt="Student Information System">
+                    <p>Asian College Student Information System</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Student Information System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="homepage.js"></script>
 </body>
 </html>
