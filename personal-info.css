@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #383A43;
+  color: #fff;
+}
+
+
+
+.page-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  font-weight: bold;
+}
+
+.personal-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.info-card {
+  background: #232427;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 360px;
+  text-align: left;
+  box-shadow: 0 2px 14px #10101022;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3CCB97;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #3CCB9744;
+  padding-bottom: 6px;
+}
+
+.info-row label {
+  font-weight: bold;
+  color: #3CCB97;
+}
+
+.info-row p {
+  margin: 0;
+  text-align: right;
+  color: #f0f0f0;
+}
+
+/* Side Feature Boxes */
+.side-box {
+  background: #232427;
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 240px;
+  box-shadow: 0 2px 12px #10101055;
+  color: #d3d7de;
+}
+
+.side-box h3 {
+  font-size: 1.2rem;
+  color: #3CCB97;
+  margin-bottom: 12px;
+}
+
+.side-box p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+

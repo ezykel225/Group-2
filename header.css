@@ -1,0 +1,72 @@
+/* header.css */
+
+/* Container */
+.site-header {
+  background-color: #383A43;
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Logo and Title */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-img {
+  width: 110px;
+  height: 110px;
+}
+
+.logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text span {
+  font-size: 2.1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 0.4;
+}
+
+
+/* Buttons */
+.logout-btn,
+.back-button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #3CCB97;
+  color: #232427;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.logout-btn:hover,
+.back-button:hover {
+  background: #232427;
+  color: #3CCB97;
+  border: 1px solid #3CCB97;
+}
+
+/* Ensure alignment and responsiveness */
+@media (max-width: 900px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px 40px;
+  }
+}

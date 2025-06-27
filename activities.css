@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #383A43;
+    color: #fff;
+}
+
+
+main {
+    padding: 40px 60px 60px;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.activities-list h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.activities-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #232427;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 14px #10101088;
+}
+
+.activities-table th,
+.activities-table td {
+    padding: 14px 18px;
+    text-align: center;
+    border-bottom: 1px solid #3CCB9788;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.activities-table thead th {
+    background-color: #3CCB97;
+    color: #232427;
+}
+
+.activities-table tbody tr:nth-child(even) {
+    background-color: #2e3038;
+}
+
+.activities-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.status-completed {
+    color: #3CCB97;
+    font-weight: 700;
+}
+
+.status-missed {
+    color: #E94B3C;
+    font-weight: 700;
+}
+.back-btn-container {
+    padding: 20px 60px 0 60px;
+}
+
+.back-btn {
+    background: #3CCB97;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #232427;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #2a9c78;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px 0 60px;
+    flex-wrap: wrap;
+}
+
+.back-btn {
+    background: #3CCB97;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #232427;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #2a9c78;
+}

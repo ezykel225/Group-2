@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #383A43;
+    color: #fff;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px 0 60px;
+    flex-wrap: wrap;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+}
+
+header h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1em;
+}
+
+.logout-btn {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #3CCB97;
+    color: #232427;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+}
+.logout-btn:hover {
+    background: #232427;
+    color: #3CCB97;
+    border: 1px solid #3CCB97;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    margin: 40px 0 20px 60px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Layout */
+.dashboard-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 0 60px 60px;
+}
+
+/* Profile Column */
+.profile-column {
+    flex: 0 0 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.profile-card {
+    background: #232427;
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 14px #10101022;
+}
+
+.student-photo {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 2px solid #3CCB97;
+    background: #34363f;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    margin: 0 0 6px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.profile-info p {
+    margin: 2px 0;
+    color: #cfd2d6;
+    font-size: 1rem;
+}
+
+/* Statistics Cards */
+.statistics-cards {
+    display: flex;
+    gap: 14px;
+}
+
+.stat-card {
+    flex: 1;
+    background: #181920;
+    border-radius: 10px;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.stat-title {
+    color: #3CCB97;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.stat-value {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 4px;
+}
+
+/* Features Column */
+.features-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Quick Links */
+.quick-links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px; /* Slightly increased gap for 6 items */
+}
+
+.quick-link {
+    flex: 1 1 180px;
+    max-width: 240px;
+    background: #232427;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: 0.2s;
+    box-shadow: 0 2px 12px #18192038;
+}
+.quick-link:hover {
+    transform: translateY(-3px);
+    border-color: #3CCB97;
+    color: #3CCB97;
+}
+
+.ql-icon {
+    font-size: 2.3rem;
+}
+
+.ql-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.ql-desc {
+    font-size: 0.95rem;
+    color: #c7ccb7;
+}
+
+/* Announcements */
+.announcements-card {
+    background: #232427;
+    border-radius: 14px;
+    padding: 18px 24px;
+    box-shadow: 0 2px 12px #18192038;
+}
+
+.announcements-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .dashboard-flex {
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
